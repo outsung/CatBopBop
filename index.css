@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100vw;
+    height: 100vh;
+    
+    margin: 0;
+    
+    background: rgb(134,118,101);
+    background: linear-gradient(180deg, rgba(134,118,101,1) 0%, rgba(212,201,184,1) 21%, rgba(144,133,119,1) 100%);
+}
+
+#bo, #op{ display: none; }
+#bo.on, #op.on{
+    display: block;
+    
+    height: 100%;
+    
+    cursor: pointer;
+}
