@@ -19,12 +19,12 @@ Array.from(new Array(10).keys()).map((i) => {
 const _bo = () => {
     BO.classList.add("on");
     OP.classList.remove("on");
-    BO_sound[Math.floor(Math.random() * (BO_sound.length + 1))].play();
+    BO_sound[Math.floor(Math.random() * BO_sound.length)].play();
 }
 const _op = () => {
     BO.classList.remove("on");
     OP.classList.add("on");
-    OP_sound[Math.floor(Math.random() * (OP_sound.length + 1))].play();
+    OP_sound[Math.floor(Math.random() * OP_sound.length)].play();
 }
 
 
@@ -33,3 +33,9 @@ BO.addEventListener("mouseup", _op);
 
 OP.addEventListener("mousedown", _bo);
 OP.addEventListener("mouseup", _op);
+
+BO.addEventListener("touchstart", _bo);
+BO.addEventListener("touchend", _op);
+
+OP.addEventListener("touchstart", _bo);
+OP.addEventListener("touchend", _op);
