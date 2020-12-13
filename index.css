@@ -8,6 +8,8 @@ body{
     
     margin: 0;
     
+    overflow: hidden;
+
     background: rgb(134,118,101);
     background: linear-gradient(180deg, rgba(134,118,101,1) 0%, rgba(212,201,184,1) 21%, rgba(144,133,119,1) 100%);
 }
@@ -16,7 +18,7 @@ body{
 #bo.on, #op.on{
     display: block;
     
-    height: 100%;
-    
+    object-fit: scale-down;
+
     cursor: pointer;
 }
