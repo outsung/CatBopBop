@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://outsung.github.io/CatBopBop/sitemapp.xml
+Sitemap: https://outsung.github.io/CatBopBop/sitemap.xml
